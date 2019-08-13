@@ -1,0 +1,123 @@
+@media all and (max-width: 1024px)
+{
+
+	#conteneur
+	{
+		width: auto;
+		flex-direction: column;
+	}
+
+	.gauche
+	{
+		display: none;
+	}
+}
+
+#conteneur
+{
+	display: flex;
+	margin: auto;
+}
+
+#cv_content
+{
+	display: flex;
+}
+
+.gauche
+{
+	background-color: olive;
+	opacity: 0.4;
+	border-radius: 10px / 10px;
+	width: 500px;
+}
+
+
+
+/* 1 changer le couleur d'un texte*/
+.couleur_texte 
+{
+	color: blue;
+}
+
+/* 2 changer l'alignement d'un texte*/
+.aligner_texte1
+{
+	text-align: center;
+}
+.flottant
+{
+	height: 100px; 
+	width: 150px;
+	display: flex;
+	margin: 0 20px 0 10px;
+	float: right;
+	border: 2px olive solid;
+
+}
+.sous-titre
+{
+	clear: right;
+}
+.legende
+{
+	color: olive;
+}
+.aligner_texte2
+{
+	text-align: justify;
+	margin: 20px;
+
+}
+
+/* 3 Appliquer une image de fond à la page */
+body
+{
+	background-image: url("images/back.jpg");
+}
+
+/* 4 Utiliser une police personnalisée via @font-face => pour les sous-titres*/
+
+@font-face {
+    font-family: 'acmeregular';
+    src: url('fonts/Acme-Regular-webfont.eot');
+    src: url('fonts/Acme-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Acme-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Acme-Regular-webfont.woff') format('woff'),
+         url('fonts/Acme-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Acme-Regular-webfont.svg#acmeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2
+{
+	font-family: acmeregular;
+}
+
+/* 5 Définir une bordure à un élément */
+
+h1
+{
+	border: 2px olive solid;
+	text-align: center;
+	box-shadow: 6px 6px 0 yellow;
+}
+
+/* 6 Définir une ombre à un élément */
+
+h2
+{
+	text-shadow: 6px 6px 5px yellow;
+}
+
+/*BONUS*/
+
+a:visited /*changer la couleur des liens une fois visité*/
+{
+	color: olive;
+}
+a:hover /*pour que les liens changes d'apparences lorsqu'on pointe sur eux*/
+{
+	color: green;
+}
